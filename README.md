@@ -1,113 +1,13 @@
-# Machine Learning Project Setup
+1. Why did you choose this dataset?
 
-This guide will help you set up a **Python virtual environment** (`venv`) and install the required dependencies for this Machine Learning project.
+- I chose this dataset because I myself am a student and plays a lot all the time. I was curios and interested to see if there is a correlation between games and academic grades.
 
-## 📌 Prerequisites
+2. What is your conclusion upon conducting linear regression on this dataset?
 
-- **Python 3.10+** installed (Check with `python --version`)
-- **pip** installed (Check with `pip --version`)
+- Firstly, according to the simple linear regression analysis, this suggests that every extra hour spent playing games is associated with an average drop of 1.2 points in grades. However, the low R² value of 0.0431 indicates that gaming hours account for only 4.3% of the variation in grades, implying a very weak connection. The scatter plot further supports this, showing grades scattered widely across different gaming hours.
 
----
+On the other hand, according to the multiple linear regression analysis, this reveals that parental education, particularly the mother's, has the strongest positive impact on academic performance. While playing games frequently shows a slight positive correlation with grades, playing a variety of different games is linked to lower academic performance. The multiple regression model explains about 26% of grade variation, an improvement from the simple model but still leaving 74% unexplained. The scatter plot highlights the model’s prediction errors, reinforcing the moderate R² value. Overall, these findings suggest that while excessive gaming, especially playing multiple games, may negatively affect grades, parental education plays a more significant role. The relationship between gaming and academic performance is complex and influenced by multiple factors beyond just playtime.
 
-## 🚀 Setting Up the Virtual Environment
+3. How relevant is linear regression today?
 
-### **1️⃣ Navigate to Your Project Folder**
-
-Open a terminal (**PowerShell** or **Command Prompt**) and go to your project directory:
-
-```sh
-cd /path/to/your/project
-```
-
-### **2️⃣ Create a Virtual Environment (`venv`)**
-
-```sh
-python -m venv venv
-```
-
-This will create a `venv/` folder inside your project.
-
-### **3️⃣ Activate the Virtual Environment**
-
-#### **🔹 Windows (PowerShell)**
-
-```sh
-venv\Scripts\Activate
-```
-
-#### **🔹 Windows (Command Prompt - cmd)**
-
-```sh
-venv\Scripts\activate.bat
-```
-
-#### **🔹 macOS/Linux**
-
-```sh
-source venv/bin/activate
-```
-
-After activation, your terminal will show `(venv)`, indicating you are inside the virtual environment.
-
-### **4️⃣ Upgrade `pip`**
-
-```sh
-python -m pip install --upgrade pip
-```
-
----
-
-## 📦 Installing Required Libraries
-
-Instead of manually installing each library, install all dependencies from `requirements.txt`:
-
-```sh
-pip install -r requirements.txt
-```
-
-If `requirements.txt` is not available, you can manually install common ML libraries with:
-
-```sh
-pip install numpy pandas scikit-learn matplotlib seaborn jupyter notebook tensorflow torch torchvision xgboost lightgbm opencv-python
-```
-
----
-
-## ❌ Deactivating the Virtual Environment
-
-When you're done working, deactivate the virtual environment:
-
-```sh
-deactivate
-```
-
----
-
-## 🎯 Summary of Commands
-
-```sh
-# Navigate to project folder
-cd /path/to/your/project
-
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-venv\Scripts\Activate  # PowerShell
-venv\Scripts\activate.bat  # CMD
-
-# Upgrade pip
-python -m pip install --upgrade pip
-
-# Install dependencies from requirements.txt
-pip install -r requirements.txt
-
-# Deactivate virtual environment
-deactivate
-```
-
----
-
-Now your virtual environment is fully set up! 🚀 Happy coding! 😊
-
-
+- Linear regression remains relevant today for analyzing relationships and making predictions in fields like finance, healthcare, and marketing. While it has limitations, such as assuming a straight-line relationship, its simplicity and efficiency keep it widely used. Despite advanced alternatives, it remains a valuable tool for data analysis.
