@@ -1,3 +1,5 @@
+PRELIMS
+
 1. Why did you choose this dataset?
 
 - I chose this dataset because I myself am a student and plays a lot all the time. I was curios and interested to see if there is a correlation between games and academic grades.
@@ -11,3 +13,15 @@
 3. How relevant is linear regression today?
 
 - Linear regression remains relevant today for analyzing relationships and making predictions in fields like finance, healthcare, and marketing. While it has limitations, such as assuming a straight-line relationship, its simplicity and efficiency keep it widely used. Despite advanced alternatives, it remains a valuable tool for data analysis.
+
+---
+
+MIDTERMS
+
+1. Does preprocessing affect the result of the model? Why?
+
+- Yes, preprocessing significantly affects the result of the model because handling missing values, encoding categorical variables, and scaling features ensure that the data is clean and suitable for algorithms like KMeans, which are sensitive to feature scales and data quality.
+
+2. What is your conclusion based on the interpretation or result of your model?
+
+- Based on the results, the KMeans clustering was able to group the houses into distinct clusters, which can help identify patterns or segments in the housing market; however, since clustering is unsupervised, further analysis is needed to interpret the meaning and usefulness of each cluster for decision-making.
